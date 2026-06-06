@@ -1,10 +1,10 @@
-services:
+databases:
   # 1. PostgreSQL Database Service
-  - type: db
-    name: contract-review-db
+  - name: contract-review-db
     plan: free
     ipAllowList: [] # Allows access from other Render services only
 
+services:
   # 2. FastAPI Backend Service
   - type: web
     name: ai-contract-review-backend
