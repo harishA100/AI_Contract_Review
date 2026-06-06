@@ -40,5 +40,6 @@ services:
     envVars:
       - key: NEXT_PUBLIC_API_URL
         fromService:
+          type: web
           name: ai-contract-review-backend
           property: host
